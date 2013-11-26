@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/colorPage.css" type="text/css"></link>
+  <script src="js/jquery.js"></script>
+  <script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <meta charset="utf-8">
+
+  <title>keypress demo</title>
+
+  <style>
+
+  fieldset {
+    margin-bottom: 1em;
+  }
+
+  input {
+    display: block;
+    margin-bottom: .25em;
+  }
+
+  #print-output {
+    width: 100%;
+  }
+
+  .print-output-line {
+    white-space: pre;
+    padding: 5px;
+    font-family: monaco, monospace;
+    font-size: .7em;
+  }
+  </style>
+</head>
+
+<body>
+
+  <form>
+    <fieldset>
+      <label for="target">Enter Color Hex Code:</label>
+      <input id="target" type="text" placeholder="a0a0a0">
+    </fieldset>
+  </form>
+
+  <button id="other" onclick="readData()">
+    Find closest named colour
+  </button>
+  <br />
+  <div id="colorInfo">
+    <h4 id="ciName"></h4>
+    <p id="ciHexCode"></p>
+  </div>
+  <div id="colorHue"></div>
+  <script src="http://api.jquery.com/resources/events.js"></script>
+  <script src="js/colorClose.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body {
+}
+#colorInfo{
+  width: 20%;
+  float: left;
+}
+#colorHue{
+  height: 100px;
+  width: 80%;
+  float: left;
+}
